@@ -15,4 +15,6 @@ let gato1= new Gato("miau")
 class Perro extends Animal{
 
 }
+let perro1= new Perro ("Guau")
 gato1.hacersonido()
+perro1.hacersonido()
