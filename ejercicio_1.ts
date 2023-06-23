@@ -22,7 +22,7 @@ class Perro extends Animal{
         return console.log(this.sonido)
     }
 }
-let gato1= new Gato("miau", "Siames", 5)
-let perro1= new Perro ("Guau", "Pastor Aleman", 1)
+let gato1= new Gato("miau")
+let perro1= new Perro ("Guau")
 gato1.hacersonido()
 perro1.hacersonido()
