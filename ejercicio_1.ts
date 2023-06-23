@@ -1,7 +1,11 @@
 class Animal {
     sonido
-    constructor(sonido:string){
+    raza
+    edad
+    constructor(sonido:string, raza:string, edad:number){
         this.sonido= sonido
+        this.raza = raza
+        this.edad = edad
     }
     
     hacersonido(){
@@ -9,12 +13,16 @@ class Animal {
     }
 }
 class Gato extends Animal{
-    
-    }
-class Perro extends Animal{
-
+    hacersonido(){
+        return console.log(this.sonido)
+    }    
 }
-let gato1= new Gato("miau")
-let perro1= new Perro ("Guau")
+class Perro extends Animal{
+    hacersonido(){
+        return console.log(this.sonido)
+    }
+}
+let gato1= new Gato("miau", "Siames", 5)
+let perro1= new Perro ("Guau", "Pastor Aleman", 1)
 gato1.hacersonido()
 perro1.hacersonido()
